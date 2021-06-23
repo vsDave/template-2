@@ -7,56 +7,62 @@
     <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            font-family: Verdana;
+    @media only screen and (max-width: 500px) {
+            div.menu{
+                display: flex;
+                flex-direction:column; 
+            }
+            
+           
+        }
+        @media only screen and (max-width: 800px) {
+            div.bottom-container{
+                
+                display: flex;
+                flex-direction: column;
+            }
         }
 
-     
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana;
+        }
 
         .container {
             align-items: center;
             justify-content: space-evenly;
             display: flex;
-            padding-top: 300px;
+            
             color: white;
-             background-image: url(restaurant_1.jpeg);
+            background-image: url(restaurant_1.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: fixed;
             height: 300px;
-            width: 1890px;
-        }
-
-        .heading h3 {
-            margin-top: 0px;
-            margin-bottom: 0px;
         }
 
         .heading h1 {
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 5px;
         }
-
-
+        .heading h3 {
+            margin-top: 0;
+        }
         .menu a {
-
             padding-left: 10px;
             justify-content: space-evenly;
             color: white;
             text-decoration: none;
             font-size: 20px;
         }
-
         .menu a:hover {
             text-decoration: underline;
         }
-
         .content {
 
             text-align: center;
             justify-content: center;
         }
-
         button {
             border: 2px solid #04AA6D;
             background-color: white;
@@ -73,29 +79,35 @@
             color: white;
         }
 
-        .flexcontainer {
-           
-        }
-        .row1{
+        .flexcontainer{}
+
+        .row1 {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-evenly;
 
         }
-        .row2{
+
+        .row2 {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
 
         }
 
         .flex-item {
-
-            padding-top: 20px;
             width: 300px;
-            height: 400px;
+            margin: 10px 0px;
+
+        }
+
+        .part1,
+        .part2,
+        .part3,
+        .part4 {
+            margin: 25px 0px;
         }
 
         .part1 img {
@@ -109,19 +121,22 @@
         .part4 {
             color: #04AA6D;
         }
-        .bottom-container{
+
+        .bottom-container {
             display: flex;
-            justify-content:center;
+            justify-content: center;
         }
-     
-        .first img{
+
+        .first img {
             height: 300px;
             width: 600px;
         }
-        .second{
+
+        .second {
             padding-left: 20px;
         }
-        .second button{
+
+        .second button {
             border: 2px solid gray;
             background-color: white;
             color: gray;
@@ -130,42 +145,55 @@
             cursor: pointer;
 
         }
-        .second button:hover{
-            
+
+        .second button:hover {
+
             color: white;
             background-color: gray;
         }
-        .second h1{
-            color:rgba(62, 141, 231, 0.815) ;
-            justify-content: flex-start;
+
+        .second h1 {
+            color: rgba(62, 141, 231, 0.815);
+            justify-content: space-between;
         }
-        .btnreadmore{
+
+        .btnreadmore {
             float: right;
         }
-        footer{
+
+        footer {
             display: flex;
             margin-top: 55px;
-            background-color:whitesmoke;
+            background-color: whitesmoke;
             justify-content: center;
+        }
+
+        .content h1,
+        p {
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+        }
+
+        .buttons {
+            margin: 25px 0px;
         }
     </style>
 </head>
 
 <body>
-    <div class="navigation">
-        <div class="container">
-            <div class="Heading">
-                <h1>Simple House</h1>
-                <h3>New restaurant template</h3>
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
+    <div class="container">
+        <div class="Heading">
+            <h1>Simple House</h1>
+            <h3>New restaurant template</h3>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </div>
     </div>
-    
+
     <div class="content">
         <div class="title">
             <h1>Welcome to simple house</h1>
@@ -228,107 +256,107 @@
                     <p>$20.25</p>
                 </div>
             </div>
-        
+
 
             <div class="flex-item">
-            <div class="part1">
-                <img src="pasta.jpg">
+                <div class="part1">
+                    <img src="pasta.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$90/$75</p>
+                </div>
             </div>
-            <div class="part2">
-                <h2>Fusce dictum finibus</h2>
-            </div>
-            <div class="part3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
-            </div>
-            <div class="part4">
-                <p>$90/$75</p>
-            </div>
-        </div>
-    
+
         </div>
 
-    <!-- row 2 -->
-    <div class="row2">
-        <div class="flex-item">
-            <div class="part1">
-                <img src="crossaint.jpg">
+        <!-- row 2 -->
+        <div class="row2">
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="crossaint.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$55</p>
+                </div>
             </div>
-            <div class="part2">
-                <h2>Fusce dictum finibus</h2>
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="momo.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$30.5</p>
+                </div>
             </div>
-            <div class="part3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="2.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$45/$55/$90</p>
+                </div>
             </div>
-            <div class="part4">
-                <p>$55</p>
-            </div>
-        </div>
-        <div class="flex-item">
-            <div class="part1">
-                <img src="momo.jpg">
-            </div>
-            <div class="part2">
-                <h2>Fusce dictum finibus</h2>
-            </div>
-            <div class="part3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
-            </div>
-            <div class="part4">
-                <p>$30.5</p>
-            </div>
-        </div>
-        <div class="flex-item">
-            <div class="part1">
-                <img src="2.jpg">
-            </div>
-            <div class="part2">
-                <h2>Fusce dictum finibus</h2>
-            </div>
-            <div class="part3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
-            </div>
-            <div class="part4">
-                <p>$45/$55/$90</p>
-            </div>
-        </div>
-        <div class="flex-item">
-            <div class="part1">
-                <img src="chinese.jpeg">
-            </div>
-            <div class="part2">
-                <h2>Fusce dictum finibus</h2>
-            </div>
-            <div class="part3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
-            </div>
-            <div class="part4">
-                <p>$55</p>
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="chinese.jpeg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$55</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="bottom-container">
-    <div class="first">
-        <img src="avocado.jpg" alt="hii">
+    <div class="bottom-container">
+        <div class="first">
+            <img src="avocado.jpg" alt="hii">
+        </div>
+        <div class="second">
+            <h1>lorem1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+                Libero, rem? Facere,tempore sed rerum, magni eum nihil<br>
+                commodi ratione corporis esse nam recusandae,<br>
+                sequi consequatur non <a href="#">talk to us</a>
+                <br>accusamus dolorum iste maiores.
+            </p>
+            <div class="btnreadmore">
+                <button class="read more">Read more</button>
+            </div>
+        </div>
+
+
     </div>
-    <div class="second">
-        <h1>lorem1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
-        Libero, rem? Facere,tempore sed rerum, magni eum nihil<br>
-        commodi ratione corporis esse nam recusandae,<br>
-        sequi consequatur non <a href="#">talk to us</a> 
-        <br>accusamus dolorum iste maiores.</p>
-        <div class="btnreadmore">
-        <button class="read more">Read more</button>
-    </div>
-    </div>
-   
-    
-</div>
-<footer>
-    
-    <p>copyright &copy;2020 simple house |Design: templateMo</p>
-</footer>
+    <footer>
+        <p>copyright &copy;2020 simple house |Design: templateMo</p>
+    </footer>
 </body>
 
 </html>

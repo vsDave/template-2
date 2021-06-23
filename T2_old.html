@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana;
+        }
+
+     
+
+        .container {
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            padding-top: 300px;
+            color: white;
+             background-image: url(restaurant_1.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 300px;
+            width: 1890px;
+        }
+
+        .heading h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .heading h1 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+
+        .menu a {
+
+            padding-left: 10px;
+            justify-content: space-evenly;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+
+            text-align: center;
+            justify-content: center;
+        }
+
+        button {
+            border: 2px solid #04AA6D;
+            background-color: white;
+            color: #04AA6D;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .pizza:hover,
+        .salad:hover,
+        .noodle:hover {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .flexcontainer {
+           
+        }
+        .row1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+        .row2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content:space-evenly;
+
+        }
+
+        .flex-item {
+
+            padding-top: 20px;
+            width: 300px;
+            height: 400px;
+        }
+
+        .part1 img {
+            height: 200px;
+        }
+
+        .part2 {
+            color: rgba(62, 141, 231, 0.815);
+        }
+
+        .part4 {
+            color: #04AA6D;
+        }
+        .bottom-container{
+            display: flex;
+            justify-content:center;
+        }
+     
+        .first img{
+            height: 300px;
+            width: 600px;
+        }
+        .second{
+            padding-left: 20px;
+        }
+        .second button{
+            border: 2px solid gray;
+            background-color: white;
+            color: gray;
+            padding: 12px 10px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        .second button:hover{
+            
+            color: white;
+            background-color: gray;
+        }
+        .second h1{
+            color:rgba(62, 141, 231, 0.815) ;
+            justify-content: flex-start;
+        }
+        .btnreadmore{
+            float: right;
+        }
+        footer{
+            display: flex;
+            margin-top: 55px;
+            background-color:whitesmoke;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="container">
+            <div class="Heading">
+                <h1>Simple House</h1>
+                <h3>New restaurant template</h3>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="title">
+            <h1>Welcome to simple house</h1>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                Repudiandae minima doloribus repellendus nisi ducimus <br>temporibus deserunt ullam et sapiente laborum,
+                odio molestiae quasi</p>
+        </div>
+        <div class="buttons">
+            <button class="pizza">pizza</button>
+            <button class="salad">Salad</button>
+            <button class="noodle">Noodle</button>
+        </div>
+    </div>
+    <div class="flexcontainer">
+        <!-- row 1 -->
+        <div class="row1">
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="salad.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$45/$55</p>
+                </div>
+            </div>
+
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="pizza.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$40</p>
+                </div>
+            </div>
+
+            <div class="flex-item">
+                <div class="part1">
+                    <img src="1.jpg">
+                </div>
+                <div class="part2">
+                    <h2>Fusce dictum finibus</h2>
+                </div>
+                <div class="part3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+                </div>
+                <div class="part4">
+                    <p>$20.25</p>
+                </div>
+            </div>
+        
+
+            <div class="flex-item">
+            <div class="part1">
+                <img src="pasta.jpg">
+            </div>
+            <div class="part2">
+                <h2>Fusce dictum finibus</h2>
+            </div>
+            <div class="part3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+            </div>
+            <div class="part4">
+                <p>$90/$75</p>
+            </div>
+        </div>
+    
+        </div>
+
+    <!-- row 2 -->
+    <div class="row2">
+        <div class="flex-item">
+            <div class="part1">
+                <img src="crossaint.jpg">
+            </div>
+            <div class="part2">
+                <h2>Fusce dictum finibus</h2>
+            </div>
+            <div class="part3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+            </div>
+            <div class="part4">
+                <p>$55</p>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="part1">
+                <img src="momo.jpg">
+            </div>
+            <div class="part2">
+                <h2>Fusce dictum finibus</h2>
+            </div>
+            <div class="part3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+            </div>
+            <div class="part4">
+                <p>$30.5</p>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="part1">
+                <img src="2.jpg">
+            </div>
+            <div class="part2">
+                <h2>Fusce dictum finibus</h2>
+            </div>
+            <div class="part3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+            </div>
+            <div class="part4">
+                <p>$45/$55/$90</p>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="part1">
+                <img src="chinese.jpeg">
+            </div>
+            <div class="part2">
+                <h2>Fusce dictum finibus</h2>
+            </div>
+            <div class="part3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, provident?
+            </div>
+            <div class="part4">
+                <p>$55</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-container">
+    <div class="first">
+        <img src="avocado.jpg" alt="hii">
+    </div>
+    <div class="second">
+        <h1>lorem1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+        Libero, rem? Facere,tempore sed rerum, magni eum nihil<br>
+        commodi ratione corporis esse nam recusandae,<br>
+        sequi consequatur non <a href="#">talk to us</a> 
+        <br>accusamus dolorum iste maiores.</p>
+        <div class="btnreadmore">
+        <button class="read more">Read more</button>
+    </div>
+    </div>
+   
+    
+</div>
+<footer>
+    
+    <p>copyright &copy;2020 simple house |Design: templateMo</p>
+</footer>
+</body>
+
+</html>
